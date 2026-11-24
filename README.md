@@ -20,13 +20,6 @@ Windows 11 Home 端末において、SEO汚染された検索結果から偽の 
   - `ccv.exe`（NirSoft ChromeCookiesView）による Edge の `Cookies` / `Local State` 読み出しおよび書き出し
 - **関連検体:** 同一の悪性 DLL と同一 C2 を利用する `HiBitUninstaller-setup-4.0.10.zip` も確認
 
-## リポジトリ構成
-
-- `README.md`: 本ドキュメント
-- `docs/incident-report.pdf`: 解析レポート原本（37ページ）
-- `iocs/iocs.md`: ネットワーク・ハッシュ・ファイル・レジストリ・タスク・FWルール一覧
-- `scripts/verify-environment.ps1`: 駆除後の状態確認・一次判定用スクリプト（読み取り専用）
-
 ## 主なタイムライン（JST）
 
 - **11/10 21:40〜21:50:** 偽サイトから入手・実行。偽 `geek.exe` 起動、偽 VC++ MSI 導入、ScreenConnect 初回接続、囮の本物 `geek.exe` 起動、再起動後の自動接続確認
